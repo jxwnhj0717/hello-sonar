@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class EchoController {
 
     @GetMapping("/{msg}")
-    public String hello(@PathVariable("msg") String msg) {
+    public String echo(@PathVariable("msg") String msg) {
         return "reply " + msg;
     }
 }
